@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button onclick="myFunction()" class="mode">Switch mode</button>
+    <img class="mainLogo" src="logo.png">
+    <button id="openSignUpBtn">Sign Up</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <form id="signupForm">
+                <img class="logo" src="logo.png">
+                <div id="temp">
+                <h2 style="text-align: center;color:white">Sign Up Form</h2>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone"
+                        placeholder="Enter Phone No." required>
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select...</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sports">Sports:</label>
+                        <select id="sports" name="sports" multiple required>
+                            <option value="Basketball">Basketball</option>
+                            <option value="football">Football</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="tennis">Tennis</option>
+                            <option value="cricket">Cricket</option>
+                            <option value="swimming">Swimming</option>
+                        </select>
+                    </div>
+                    <input type="reset" class="clear"></button>
+                </div>
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+            </form>
+        </div>
+
+    </div>
+    <div id="userCount" class="count">No. of Registered Users: 0</div>
+    <script src="script.js"></script>
+</body>
+</html>
